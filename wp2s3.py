@@ -61,7 +61,7 @@ def perform_migration(kwargs):
         replace_images(kwargs)
 
     kwargs['db'].close()
-    print 'Finished migrating media items from ' + x['wp_host'] + ' to ' + x['s3_host'] + x['s3_bucket']
+    print 'Finished migrating media items from ' + kwargs['wp_host'] + ' to ' + kwargs['s3_host'] + kwargs['s3_bucket']
 
 
 
